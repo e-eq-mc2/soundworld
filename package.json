@@ -1,0 +1,27 @@
+{
+  "name": "soundworld",
+  "version": "1.0.0",
+  "description": "Enjoy the world!!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all julius fonts build app",
+    "build": "webpack",
+    "app": "electron .",
+    "fonts": "ruby fonts/llf2js.rb > font_svg.js",
+    "julius": "sh ~/sandbox/julius/dict/aiu/run-osx-dnn.sh"
+  },
+  "author": "Noa",
+  "license": "MIT",
+  "devDependencies": {
+    "@webpack-cli/generators": "^2.2.0",
+    "electron": "^13.1.1",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "matter-js": "^0.17.1",
+    "net": "^1.0.2"
+  }
+}
